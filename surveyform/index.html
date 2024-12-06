@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 350px;
+            margin: 50px auto;
+            padding: 30px 30px;
+
+        }
+
+        .form-control,
+        label {
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: greenyellow;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h2>CodeCrash survey form</h2>
+
+    <form style="text-align: center;">
+        <fieldset style="background-color: white;">
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="fname">First name :</label>
+                <input style="padding: 5px; width: 340px; border-radius: 2px;"  type="text" name="fname" placeholder="Enter your name">
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="email">Email</label>
+                <input style="padding: 5px; width: 340px; border-radius: 2px;" type="text" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="age">Age</label>
+                <input style="padding: 5px; width: 340px; border-radius: 2px;" type="text" name="age" placeholder="Enter your Age">
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="choice">which option best describe you?</label>
+                <select name="choice" id="" style="width: 340px; padding: 5px;">
+                    <option value="">Student </option>
+                    <option value="">Intern </option>
+                    <option value="">professional </option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="age">Would you recommend CodeCrash to a friend?</label>
+           <input type="radio" name="" id="">yes
+           <input type="radio" name="" id="">No
+           <input type="radio" name="" id="">May be not
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="age">Language and framework known</label>
+              <input type="checkbox" name="" id="">C
+              <input type="checkbox" name="" id="">C++
+              <input type="checkbox" name="" id="">Java 
+              <input type="checkbox" name="" id="">Python
+            </div>
+            <div class="form-control" style="text-align: left;">
+                <label style="display: block;" for="age">Any Comment or Suggestion</label>
+                <textarea name="" id="" rows="5" cols="45"></textarea>
+            </div>
+            <div class="form-control" style="text-align: left;">
+                
+                <input style="text-align: center; width: 340px; padding: 4px; 
+                margin: 4px;
+                background-color: greenyellow;" type="submit" value="Submit">
+            </div>
+                
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color flipper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: end;
+        }
+
+        h1 {
+            background: dimgray;
+
+        }
+
+        #btn1 {
+            padding: 10px 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>background Color <span class="clor"></span></h1>
+        <button id="btn1">click me</button>
+    </div>
+    <script>
+        function getrandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1} , ${val2} ,${val3})`;
+        }
+        const btn = document.getElementById('btn1');
+        const color = document.querySelector(".color");
+        btn.addEventListener("click", () => {
+            document.querySelector("body").style.backgroundColor = getrandomColor()
+        }
+        )
+        function getrandomNumber(){
+            return Math.floor(Math.random() * 255)
+        }
+
+    </script>
+</body>
+
+</html>

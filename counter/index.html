@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter </title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            font-size: 3rem;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">0</p>
+    <div class="button-container">
+        <button class="dec">decrease</button>
+        <button class="Reset">Reset</button>
+        <button class="Inc">Increase</button>
+    </div>
+    <script>
+
+        let dec = document.querySelector(".dec")
+        let reset = document.querySelector(".Reset")
+        let Inc = document.querySelector(".Inc")
+        let counter = document.querySelector(".text")
+        let count = 0;
+
+        dec.addEventListener("click", () => {
+
+            count -= 1;
+            counter.innerHTML = count;
+        }
+        )
+        Inc.addEventListener("click", () => {
+            count += 1;
+            counter.innerHTML = count;
+        }
+        )
+        reset.addEventListener("click", () => {
+            count = 0;
+            counter.innerHTML = count;
+        }
+        )
+
+    </script>
+</body>
+
+</html>

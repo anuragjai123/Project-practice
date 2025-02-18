@@ -292,6 +292,10 @@ button > * {
   align-items: center;
   justify-content: center;
   gap: 12px;
+
+}
+.volume ,img{
+  cursor: pointer;
 }
 
 .range {
